@@ -6,16 +6,16 @@ export default function NavbarHeader() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     const menuItems = [
-        "Profile",
-        "Dashboard",
-        "Activity",
-        "Analytics",
-        "System",
-        "Deployments",
-        "My Settings",
-        "Team Settings",
-        "Help & Feedback",
-        "Log Out",
+        "Home",
+        // "Dashboard",
+        // "Activity",
+        // "Analytics",
+        // "System",
+        // "Deployments",
+        // "My Settings",
+        // "Team Settings",
+        // "Help & Feedback",
+        // "Log Out",
     ];
 
     return (
@@ -32,12 +32,12 @@ export default function NavbarHeader() {
             </NavbarContent>
 
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
-                <NavbarItem>
-                    <Link color="foreground" href="#">
-                        Features
+                <NavbarItem isActive>
+                    <Link href="#">
+                        Home
                     </Link>
                 </NavbarItem>
-                <NavbarItem isActive>
+                {/* <NavbarItem isActive>
                     <Link href="#" aria-current="page">
                         Customers
                     </Link>
@@ -46,8 +46,9 @@ export default function NavbarHeader() {
                     <Link color="foreground" href="#">
                         Integrations
                     </Link>
-                </NavbarItem>
+                </NavbarItem> */}
             </NavbarContent>
+
             <NavbarContent justify="end">
                 <NavbarItem className="hidden lg:flex">
                     <Link href="#">Login</Link>
