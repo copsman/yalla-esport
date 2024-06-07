@@ -7,7 +7,7 @@ import Header from "@/components/Header";
 import { Button } from "@nextui-org/react";
 
 export default async function Index() {
-  const parentUrl = process.env.VERCEL_URL ? `${process.env.VERCEL_URL}` : "localhost";
+  const parentUrl = process.env.VERCEL_URL ? `yalla-esport.vercel.app` : "localhost";
   return (
     <>
       <iframe
