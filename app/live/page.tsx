@@ -15,7 +15,7 @@ const LivePage: React.FC = () => {
             <div style={{ display: 'flex', gap: '20px', marginTop: '20px' }}>
                 {/* Twitch Embed */}
                 <div style={{ flex: 2, position: 'relative' }}>
-                    <TwitchEmbed channel="esl_csgo" />
+                    <TwitchEmbed channel="compass_cs2" />
                 </div>
 
                 {/* Match Highlights */}

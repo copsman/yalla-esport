@@ -5,10 +5,11 @@ interface TwitchEmbedProps {
 }
 
 const TwitchEmbed: React.FC<TwitchEmbedProps> = ({ channel }) => {
+    const parentUrl = process.env.VERCEL_URL ? `${process.env.VERCEL_URL}` : "localhost";
     return (
         <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
             <iframe
-                src={`https://player.twitch.tv/?channel=${channel}&parent=localhost`}
+                src={`https://player.twitch.tv/?channel=${channel}&parent=${parentUrl}`}
                 frameBorder="0"
                 allowFullScreen={true}
                 scrolling="no"
