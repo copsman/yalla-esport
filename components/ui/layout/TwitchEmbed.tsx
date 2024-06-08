@@ -5,7 +5,7 @@ interface TwitchEmbedProps {
 }
 
 const TwitchEmbed: React.FC<TwitchEmbedProps> = ({ channel }) => {
-    const parentUrl = process.env.VERCEL_URL ? `${process.env.VERCEL_URL}` : "localhost";
+    const parentUrl = process.env.VERCEL_URL ? `yalla-esport.vercel.app` : "localhost";
     return (
         <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
             <iframe
