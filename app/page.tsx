@@ -14,16 +14,16 @@ const HomePage: React.FC = () => {
       {/* Hero Section */}
       <div style={heroSectionStyle}>
         <Image
-          src="https://images.unsplash.com/photo-1535223289827-42f1e9919769"
-          alt="Hero Banner"
+          src="/desertAurora.jpg"
+          alt="Desert Aurora"
           layout="fill"
           objectFit="cover"
           quality={100}
           style={{ borderRadius: '8px' }}
         />
         <div style={heroContentStyle}>
-          <Title level={1} style={{ color: 'white' }}>Welcome to Desert Aurora Hackathon</Title>
-          <Text style={{ color: 'white' }}>Catch all the latest updates and live action from the esports world.</Text>
+          <Title level={1} style={{ color: 'black' }}>Welcome to Desert Aurora Hackathon</Title>
+          <Text style={{ color: 'black' }}>Catch all the latest updates and live action from the esports world.</Text>
           <br />
           <div style={buttonContainerStyle}>
             <Link href="/live" passHref>
