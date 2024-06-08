@@ -1,0 +1,14 @@
+/* Example of overriding primary color */
+:root {
+    --ant-primary-color: #1890ff;
+}
+
+.ant-layout {
+    background: #fff;
+    /* White background for the layout */
+}
+
+.ant-card {
+    border-radius: 8px;
+    overflow: hidden;
+}
